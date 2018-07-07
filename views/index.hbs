@@ -1,8 +1,11 @@
 <div id="map"></div>
 <div id="export">
-      <input type='submit' value='Export' onclick='exportData()'>
+      <input type='submit' value='Export' onclick='exportData()'><br>
+      <a href="rename_me.json" download>Download</a>
 </div>
-<a href="rename_me.json" download>Download</a>
+<div id="output" style="text-align: center;">
+
+</div>
 <div id="form">
   <table>
     <tr>
@@ -22,6 +25,9 @@
     </tr>
   </table>
 </div>
+<footer>
+  <p>Copyright (C) Cody Farrey</p>
+</footer>
 <script>document.getElementById('form').style.display = "none";</script>
 <script src="/javascripts/map.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgPPI5-yv9P8gQHFILnhwttl4OGeiRSyw&callback=initMap"

@@ -53,7 +53,7 @@ function saveData() {
 }
 
 function exportData() {
-  document.getElementById('export').innerHTML = `<code>${JSON.stringify(lot, undefined, 2)}</code>`;
+  document.getElementById('output').innerHTML = `<code>${JSON.stringify(lot, undefined, 2)}</code>`;
 
   $.post("/", { 
     data: JSON.stringify(lot) 
