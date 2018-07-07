@@ -1,0 +1,28 @@
+<div id="map"></div>
+<div id="export">
+      <input type='submit' value='Export' onclick='exportData()'>
+</div>
+<a href="rename_me.json" download>Download</a>
+<div id="form">
+  <table>
+    <tr>
+      <td>Name: </td>
+      <td><input type='text' id='name'/></td>
+    </tr>
+    <tr>
+      <td>Pass Color:</td>
+      <td><select id='color'>
+        <option value='blue'>blue</option>
+        <option value='yellow'>yellow</option>
+        <option value='both'>blue/yellow</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td><input type='button' value='Save' onclick='saveData()'></td>
+    </tr>
+  </table>
+</div>
+<script>document.getElementById('form').style.display = "none";</script>
+<script src="/javascripts/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgPPI5-yv9P8gQHFILnhwttl4OGeiRSyw&callback=initMap"
+async defer></script>
