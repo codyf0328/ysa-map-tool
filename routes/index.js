@@ -1,14 +1,14 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 const fs = require('fs');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', (req, res, next) => {
   res.render('index', { title: 'YSA Map Tool - 2018' });
 });
 
-router.post('/', function(req, res) {
+router.post('/', (req, res) => {
   var fileData = req.body.data;
     fs.writeFile('public/rename_me.json', fileData , function(err) {
       if (err) {
